@@ -26,8 +26,7 @@ import { Button } from 'soongle-ui';
 function App() {
   return (
     <div>
-      <Button variant="primary">Click me</Button>
-      <Button variant="outline">Outline</Button>
+      <Button>Click me</Button>
     </div>
   );
 }
@@ -37,5 +36,4 @@ function App() {
 
 - Built with React and Tailwind CSS
 - Fully typed with TypeScript
-- Supports Light/Dark modes (if applicable)
 - Tree-shakable exports

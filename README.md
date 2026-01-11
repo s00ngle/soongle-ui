@@ -2,6 +2,8 @@
 
 A premium, modern design system library for React.js and Next.js, built on top of **Tailwind CSS v4**.
 
+Read this in other languages: [English](README.md), [한국어](README.ko.md)
+
 ## ✨ Features
 
 - 🎨 **Utility-First**: Powered by Tailwind CSS v4 for ultimate flexibility.
@@ -88,4 +90,4 @@ function App() {
 - **Tailwind CSS**: v4.x (The library includes styles, but works best in a Tailwind project)
 
 ---
-Developed with ❤️ by Soongle.
+Developed by Soongle.

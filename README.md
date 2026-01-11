@@ -1,93 +1,106 @@
 # soongle-ui
 
-A premium, modern design system library for React.js and Next.js, built on top of **Tailwind CSS v4**.
+A modern design system library for React.js and Next.js, built on top of **Tailwind CSS v4**.
 
-Read this in other languages: [English](https://github.com/s00ngle/soongle-ui/blob/master/README.md), [한국어](https://github.com/s00ngle/soongle-ui/blob/master/README.ko.md)
+Read this in other languages: [English](https://github.com/s00ngle/soongle-ui/blob/master/README.md) | [한국어](https://github.com/s00ngle/soongle-ui/blob/master/README.ko.md)
+
+---
 
 ## ✨ Features
 
-- 🎨 **Utility-First**: Powered by Tailwind CSS v4 for ultimate flexibility.
-- 🛠️ **Type-Safe**: Written in TypeScript with full IntelliSense support.
-- 📦 **Tree-Shakable**: Only include the components you actually use.
-- 🚀 **Next.js Optimized**: Built with Server Components and SSR in mind.
+- 🎨 **Utility-First**: Powered by Tailwind CSS v4 for ultimate flexibility and performance.
+- 🛠️ **Type-Safe**: Fully written in TypeScript with comprehensive IntelliSense support.
+- 📦 **Minimal Footprint**: Optimized with Tree-shaking and Minification to keep your bundle light.
+- 🚀 **Framework Ready**: Seamless integration with Next.js (App Router), Vite, and more.
 
 ## 🚀 Installation
 
+Install the package via your favorite package manager:
+
 ```bash
+# npm
 npm install soongle-ui
+
+# yarn
+yarn add soongle-ui
+
+# pnpm
+pnpm add soongle-ui
 ```
 
-## 🛠️ Setup
+## 🛠️ Setup Guide
 
-### 1. Import Styles
+To ensure components are styled correctly, follow the setup guide based on your project configuration.
 
-If you are **not** using Tailwind CSS in your project, import the library's stylesheet in your root entry file (e.g., `app/layout.tsx` for Next.js, or `src/main.tsx` for Vite).
+### Case 1: Standard Project (No Tailwind)
+
+If you are **not** using Tailwind CSS in your project, import the pre-compiled stylesheet in your root entry file:
 
 ```tsx
+// For Next.js (app/layout.tsx) or Vite (src/main.tsx)
 import 'soongle-ui/styles.css';
 ```
 
-#### 💡 If you are already using Tailwind CSS
+### Case 2: Tailwind CSS Project (Recommended)
 
-If your project already has Tailwind CSS installed, **do not** import `soongle-ui/styles.css`. Instead, add the library's component path to your Tailwind configuration to avoid duplicate styles and keep your bundle clean.
+If your project already uses Tailwind CSS, **do not** import `soongle-ui/styles.css`. Instead, include the library in your Tailwind configuration to leverage shared theme tokens and avoid duplicate styles.
 
-##### For Tailwind CSS v3 (`tailwind.config.ts`)
-Add the `soongle-ui` distribution path to the `content` array:
-
-```ts
-export default {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/soongle-ui/dist/**/*.{js,ts,jsx,tsx}", // Add this line
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
-```
-
-##### For Tailwind CSS v4
-Tailwind v4 automatically scans `node_modules`. However, you should ensure your `@theme` and custom variables are consistent with the library. For the best experience, just ensure your root CSS includes:
+#### For Tailwind CSS v4
+Tailwind v4 scans your modules automatically. Simply ensure your root CSS file includes the `@source` directive:
 
 ```css
 @import "tailwindcss";
 @source "../node_modules/soongle-ui";
 ```
 
-## 📖 Usage
+#### For Tailwind CSS v3 (`tailwind.config.ts`)
+Add the library path to your `content` array:
 
-### Using the Text Component
+```ts
+export default {
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/soongle-ui/dist/**/*.{js,ts,jsx,tsx}",
+  ],
+  // ...
+};
+```
+
+## 📖 Component Usage
+
+### Text Component
+The `Text` component supports various sizes, weights, and colors derived from Tailwind defaults.
 
 ```tsx
 import { Text } from 'soongle-ui';
 
-function App() {
+function Example() {
   return (
-    <div className="p-8 space-y-4">
+    <div className="flex flex-col gap-4">
       <Text size="5xl" weight="black" color="primary">
-        Hello Soongle!
+        Modern UI with Soongle
       </Text>
       <Text size="base" color="muted">
-        This is a pre-styled text component using Tailwind defaults.
+        Build beautiful interfaces faster with pre-styled components.
       </Text>
     </div>
   );
 }
 ```
 
-## 🏗️ Available Components
+## 🏗️ Roadmap
 
-| Component | Description |
-| :--- | :--- |
-| `Button` | Interactive button component with various variants. |
-| `Text` | Semantic text component with support for all Tailwind font utilities. |
-| (More coming soon...) | Stay tuned for more high-quality components. |
+| Component | Status | Description |
+| :--- | :---: | :--- |
+| `Button` | ✅ | Primary, Secondary, and Ghost variants with loading states. |
+| `Text` | ✅ | Semantic typography with full Tailwind utility support. |
+| `Input` | ⏳ | Accessible form inputs and validations. |
+| `Card` | ⏳ | Flexible container for diverse content layouts. |
 
 ## 🧩 Requirements
 
-- **React**: 18.x or 19.x
-- **Tailwind CSS**: v4.x (The library includes styles, but works best in a Tailwind project)
+- **React**: `^18.0.0` or `^19.0.0`
+- **Tailwind CSS**: `v4.x` recommended (compatible with `v3.x`)
 
 ---
-Developed by Soongle.
+Developed by **Soongle**.

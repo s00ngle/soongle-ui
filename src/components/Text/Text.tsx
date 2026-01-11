@@ -3,8 +3,8 @@ import * as React from "react";
 export interface TextProps {
   children?: React.ReactNode;
   as?: "p" | "span" | "div" | "label" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-  size?: "xs" | "sm" | "base" | "lg" | "xl" | "2xl" | "3xl" | "4xl";
-  weight?: "light" | "normal" | "medium" | "semibold" | "bold";
+  size?: "xs" | "sm" | "base" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl";
+  weight?: "light" | "normal" | "medium" | "semibold" | "bold" | "extrabold" | "black";
   color?: "default" | "muted" | "primary" | "secondary" | "danger" | "success";
   align?: "left" | "center" | "right";
   className?: string;

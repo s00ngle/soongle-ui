@@ -2,6 +2,7 @@
   "name": "soongle-ui",
   "version": "0.1.6",
   "description": "A design system library for React.js and Next.js with TailwindCSS v4 by Soongle",
+  "sideEffects": false,
   "publishConfig": {
     "access": "public"
   },
@@ -21,7 +22,7 @@
   ],
   "scripts": {
     "build": "tsup && npm run build:css",
-    "build:css": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css",
+    "build:css": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css --minify",
     "dev": "tsup --watch",
     "type-check": "tsc --noEmit",
     "storybook": "storybook dev -p 6006",

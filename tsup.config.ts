@@ -6,6 +6,9 @@ export default defineConfig({
   dts: true,
   sourcemap: true,
   clean: true,
+  minify: true,
+  splitting: true,
+  treeshake: true,
   external: ['react', 'react-dom'],
   esbuildOptions(options) {
     options.banner = {

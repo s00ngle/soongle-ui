@@ -2,7 +2,7 @@
 
 **Tailwind CSS v4**를 기반으로 한 React.js 및 Next.js용 프리미엄 현대적 디자인 시스템 라이브러리입니다.
 
-다른 언어로 보기: [English](README.md), [한국어](README.ko.md)
+다른 언어로 보기: [English](https://github.com/s00ngle/soongle-ui/blob/master/README.md), [한국어](https://github.com/s00ngle/soongle-ui/blob/master/README.ko.md)
 
 ## ✨ 특징
 

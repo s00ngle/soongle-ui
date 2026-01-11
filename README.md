@@ -2,7 +2,7 @@
 
 A premium, modern design system library for React.js and Next.js, built on top of **Tailwind CSS v4**.
 
-Read this in other languages: [English](README.md), [한국어](README.ko.md)
+Read this in other languages: [English](https://github.com/s00ngle/soongle-ui/blob/master/README.md), [한국어](https://github.com/s00ngle/soongle-ui/blob/master/README.ko.md)
 
 ## ✨ Features
 

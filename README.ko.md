@@ -1,5 +1,8 @@
 # soongle-ui
 
+![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success?style=flat-square)
+![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4-blue?style=flat-square)
+
 **Tailwind CSS v4**를 기반으로 한 React.js 및 Next.js용 현대적 디자인 시스템 라이브러리입니다.
 
 다른 언어로 보기: <a href="https://github.com/s00ngle/soongle-ui/blob/master/README.md" target="_blank">English</a> | <a href="https://github.com/s00ngle/soongle-ui/blob/master/README.ko.md" target="_blank">한국어</a>
@@ -8,9 +11,9 @@
 
 ## ✨ 주요 특징
 
+- 📦 **Zero Dependencies**: 의존성 없이 라이브러리만 깔끔하게 설치되어 프로젝트 무게를 줄입니다.
 - 🎨 **Utility-First**: Tailwind CSS v4의 성능과 유연성을 그대로 활용합니다.
 - 🛠️ **Type-Safe**: TypeScript로 작성되어 완벽한 타입 추론과 자동 완성을 지원합니다.
-- 📦 **최적화된 배포**: Tree-shaking 및 Minification이 적용되어 번들 크기를 최소화합니다.
 - 🚀 **프레임워크 최적화**: Next.js(App Router), Vite 등 현대적인 환경에 최적화되어 설계되었습니다.
 
 ## 🚀 설치 방법

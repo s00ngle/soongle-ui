@@ -10,6 +10,7 @@ export default defineConfig({
   splitting: true,
   treeshake: true,
   external: ['react', 'react-dom'],
+  noExternal: [], // Bundles all other dependencies into the output
   esbuildOptions(options) {
     options.banner = {
       js: '"use client";',

@@ -1,5 +1,8 @@
 # soongle-ui
 
+![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success?style=flat-square)
+![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4-blue?style=flat-square)
+
 A modern design system library for React.js and Next.js, built on top of **Tailwind CSS v4**.
 
 Read this in other languages: <a href="https://github.com/s00ngle/soongle-ui/blob/master/README.md" target="_blank">English</a> | <a href="https://github.com/s00ngle/soongle-ui/blob/master/README.ko.md" target="_blank">한국어</a>
